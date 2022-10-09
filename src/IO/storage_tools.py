@@ -12,6 +12,7 @@ def create_bucket(bucket_name):
     log = logging.getLogger()
 
     storage_client = storage.Client()
+    log.warning(f'bucket name = {bucket_name}')
     if bucket_name not in [x.name for x in storage_client.list_buckets()]:
         bucket = storage_client.create_bucket(bucket_name)
 

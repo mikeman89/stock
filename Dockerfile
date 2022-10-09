@@ -23,7 +23,7 @@ COPY . ./
 
 RUN conda env create -f scripts/environment.yml
 SHELL ["conda", "run", "-n", "stock", "/bin/bash", "-c"]
-RUN pip install Flask gunicorn
+RUN pip install flask gunicorn
 #
 # Service must listen to $PORT environment variable.
 # This default value facilitates local development.

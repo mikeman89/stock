@@ -16,7 +16,7 @@ def create_business_logic():
 class BusinessLogic:
 
     def __init__(self, model_creator):
-        self._root_bucket = 'MAT-ycng228-stock-project-bucket'
+        self._root_bucket = 'mat-ycng228-stock-bucket-proj-v1'
         self._config = configparser.ConfigParser()
         self._config.read('application.conf')
         self._model_creator = model_creator
